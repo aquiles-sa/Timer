@@ -1,0 +1,115 @@
+@import 'variables' 
+@import 'mixins'
+  
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    background-color: $body-bg
+
+    font-family: "Trebuchet MS", "Helvetica", sans-serif
+
+    display: flex
+    justify-content: center
+    align-items: center
+    
+    height: 100vh
+
+.container
+    @include custom-border(5px, solid, $border-container)
+    background-color: $bg-color
+
+    padding: 2.5rem
+    border-radius: 1rem 
+
+    text-align: center
+    
+    
+    .title-area
+        text-align: center
+
+        &-text
+            @include font-config(3em, $text-color)
+
+            span
+                font-size: 1.3em
+                color: $clockIcon-color
+                text-shadow:  0 5px 1px $iconShadow-color
+
+                padding-right: 0.5rem                
+
+    .background
+        @include custom-border(3px, solid, $white)
+
+        padding: 2rem
+        margin: 2rem
+
+        border-radius: 50%
+
+    .timeContent
+        width: 18rem
+        height: 18rem
+
+        display: flex
+        justify-content: center
+        align-items: center
+
+        .time-box
+            @include custom-border(solid, $border-timeBox)
+            border-radius: 1.5rem
+
+            padding: 1rem
+            margin: 0 0.5rem
+
+            h4
+                color: $white     
+
+        &-el
+            @include font-config(3.5em, $white)
+
+    .btnArea    
+        display: flex
+        justify-content: center
+        gap: 1.5rem
+
+        &-pause, 
+        &-start, 
+        &-reset
+            @include btn-config
+            @include custom-border(2px, solid, $btn-border)
+
+            &:hover
+                background-color: $btn-hover
+           
+            &:active
+                color: $white
+
+        &-pause,
+        &-reset
+            display: none
+            @include showAnimation
+
+    .background-start
+        @include custom-border(3px, solid, $text-color)
+        @include active-background($bgStart-color)
+        @include boxShadow(1.7em, $border-bg)
+        
+        transition: .3s
+        
+    .background-pause
+        @include active-background($bgPause-color)
+        @include boxShadow(1.7em, $border-pause)
+        @include custom-border(3px, solid, $border-pause)
+
+        transition: .3s
+
+    .background-stop
+        @include active-background($bgStop-color)
+        @include boxShadow(1.7em, $border-stop)
+        @include custom-border(3px, solid, $border-stop)
+
+        transition: .3s       
+
+ 

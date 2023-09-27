@@ -1,0 +1,38 @@
+@mixin custom-border($style, $color, $width: 1px)
+    border: $width $style $color
+
+@mixin btn-config
+    width: 3.5rem
+    height: 3.5rem
+
+    background: transparent
+
+    outline: none
+    border: none
+    border-radius: 50%
+
+    color: $text-color
+    font-size: 1.1em
+
+    cursor: pointer
+    transition: .2s
+
+@mixin boxShadow($spacement, $color, $width: 0, $height: 0)
+    box-shadow: $width $height $spacement $color
+
+@mixin font-config($size, $color)
+    font-size: $size
+    color: $color
+        
+@mixin active_background($bg-color)
+    background-color: $bg-color
+
+
+@keyframes appear
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+@mixin showAnimation
+    animation: appear .7s

@@ -1,0 +1,117 @@
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(20, 20, 20);
+  font-family: "Trebuchet MS", "Helvetica", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  border: rgb(47, 47, 47) 5px solid;
+  background-color: rgba(38, 38, 38, 0.62);
+  padding: 2.5rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+.container .title-area {
+  text-align: center;
+}
+.container .title-area-text {
+  font-size: 3em;
+  color: rgb(5, 250, 144);
+}
+.container .title-area-text span {
+  font-size: 1.3em;
+  color: rgb(205, 205, 205);
+  text-shadow: 0 5px 1px rgb(5, 250, 144);
+  padding-right: 0.5rem;
+}
+.container .background {
+  border: rgb(255, 255, 255) 3px solid;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 50%;
+}
+.container .timeContent {
+  width: 18rem;
+  height: 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .timeContent .time-box {
+  border: 1px solid rgba(255, 255, 255, 0.113);
+  border-radius: 1.5rem;
+  padding: 1rem;
+  margin: 0 0.5rem;
+}
+.container .timeContent .time-box h4 {
+  color: rgb(255, 255, 255);
+}
+.container .timeContent-el {
+  font-size: 3.5em;
+  color: rgb(255, 255, 255);
+}
+.container .btnArea {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.container .btnArea-pause, .container .btnArea-start, .container .btnArea-reset {
+  width: 3.5rem;
+  height: 3.5rem;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  color: rgb(5, 250, 144);
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: 0.2s;
+  border: rgb(201, 201, 201) 2px solid;
+}
+.container .btnArea-pause:hover, .container .btnArea-start:hover, .container .btnArea-reset:hover {
+  background-color: rgba(2, 248, 72, 0.321);
+}
+.container .btnArea-pause:active, .container .btnArea-start:active, .container .btnArea-reset:active {
+  color: rgb(255, 255, 255);
+}
+.container .btnArea-pause, .container .btnArea-reset {
+  display: none;
+  animation: appear 0.7s;
+}
+.container .background-start {
+  border: rgb(5, 250, 144) 3px solid;
+  background-color: rgba(1, 255, 1, 0.133);
+  box-shadow: 0 0 1.7em rgba(0, 255, 153, 0.953);
+  transition: 0.3s;
+}
+.container .background-pause {
+  background-color: rgba(255, 230, 1, 0.133);
+  box-shadow: 0 0 1.7em rgba(255, 255, 0, 0.897);
+  border: rgba(255, 255, 0, 0.897) 3px solid;
+  transition: 0.3s;
+}
+.container .background-stop {
+  background-color: rgba(255, 1, 52, 0.21);
+  box-shadow: 0 0 1.7em rgba(255, 0, 55, 0.897);
+  border: rgba(255, 0, 55, 0.897) 3px solid;
+  transition: 0.3s;
+}
+
+/*# sourceMappingURL=styles.css.map */

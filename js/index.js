@@ -2,9 +2,7 @@ let hourText = document.querySelector("#hour");
 let minutesText = document.querySelector("#minutes");
 let secondsText = document.querySelector("#seconds");
 
-let box = document.querySelectorAll(".time-box");
 const background = document.querySelector(".background");
-const timer = document.querySelector("#timer");
 
 const startBtn = document.querySelector("#start");
 const pauseBtn = document.querySelector("#pause");
@@ -61,8 +59,6 @@ pauseBtn.addEventListener("click", () => {
   background.classList.add("background-pause");
   background.classList.remove("background-start");
   background.classList.remove("background-stop");
-
-  box.style.border = "1px solid #dae10973";
 });
 
 stopBtn.addEventListener("click", () => {

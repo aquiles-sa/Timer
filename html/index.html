@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link CSS (formated by Sass) -->
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <!-- Icon Fonts -->
+    <script
+      src="https://kit.fontawesome.com/f68da14a21.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Timer</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="title-area">
+        <h1 class="title-area-text">
+          <span><i class="fa-regular fa-clock"></i></span>Timer
+        </h1>
+      </section>
+      <div class="background">
+        <section class="timeContent" id="timer">
+          <div class="time-box">
+            <span class="timeContent-el" id="hour">00</span>
+            <h4>Hours</h4>
+          </div>
+
+          <div class="time-box">
+            <span class="timeContent-el" id="minutes">00</span>
+            <h4>Minutes</h4>
+          </div>
+
+          <div class="time-box">
+            <span class="timeContent-el" id="seconds">00</span>
+            <h4>Seconds</h4>
+          </div>
+        </section>
+      </div>
+      <section class="btnArea">
+        <button type="button" class="btnArea-pause" id="pause">
+          <i class="fa-solid fa-pause"></i>
+        </button>
+        <button type="button" class="btnArea-start" id="start">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button type="button" class="btnArea-reset" id="stop">
+          <i class="fa-solid fa-stop"></i>
+        </button>
+      </section>
+    </main>
+
+    <script src="/js/index.js"></script>
+  </body>
+</html>

@@ -4,7 +4,7 @@
 <img src="asset/timer.png" alt="Visualização da página inicial">
 <br>
 
-Este projeto foi realizado com o intuito de aprimorar minhas habilidades nas tecnologias HTML, Sass e JavaScript. Consiste no desenvolvimento de um cronômetro (timer) que conta as horas, minutos e segundos. Pode-se considerar de que um projetoc como este é analisado como básico e eque esclaresce dúvidas e testa as habilidades de um programador iniciante. 
+Este projeto foi realizado com o intuito de aprimorar minhas habilidades nas tecnologias HTML, Sass e JavaScript. Consiste no desenvolvimento de um cronômetro (timer) que conta as horas, minutos e segundos. Pode-se considerar de que um projeto como este é analisado como básico e eque esclaresce dúvidas e testa as habilidades de um programador iniciante. 
 
 <hr>
 
